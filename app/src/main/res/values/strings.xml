@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MiPokedex_ServinAngel</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="habilidad">Habilidad</string>
+    <string name="tipo_fuego">Fuego</string>
+    <string name="tipo_fantasma">Fantasma</string>
+    <string name="pokemon_nombre">Ceruledge</string>
+    <string name="pokemon_numero">#938</string>
+    <string name="pokemon_altura">1,6 m</string>
+    <string name="pokemon_peso">62,0 kg</string>
+    <string name="pokemon_habilidad_valor">Armadura Frágil</string>
+    <string name="pokemon_descripcion">Imbuye sus espadas de fuego con el rencor de los guerreros caídos y absorbe la energía vital de sus rivales para avivarse.</string>
+    <string name="evolucion_anterior">Charcadet N.º 936</string>
+    <string name="evolucion_siguiente">Armarouge N.º 937</string>
+</resources>

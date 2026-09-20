@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/morado_oscuro"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="411dp"
+        android:layout_height="601dp"
+        android:layout_marginTop="236dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="145dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bola" />
+
+    <ImageView
+        android:id="@+id/pokemon"
+        android:layout_width="219dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ceruledge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/pokemon_nombre"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numeroPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="@string/pokemon_numero"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="303dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:text="@string/pokemon_descripcion"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoPokemon" />
+
+    <TextView
+        android:id="@+id/pesoPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:text="@string/pokemon_peso"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/peso"
+        app:layout_constraintTop_toBottomOf="@+id/altura_pokemon" />
+
+    <TextView
+        android:id="@+id/habilidadPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:text="@string/pokemon_habilidad_valor"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/pesoPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/habilidad" />
+
+    <TextView
+        android:id="@+id/habilidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:padding="8dp"
+        android:text="@string/habilidad"
+        android:textColor="@color/morado_oscuro"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_fantasma" />
+
+    <TextView
+        android:id="@+id/altura_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/pokemon_altura"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/altura"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_fuego" />
+
+    <TextView
+        android:id="@+id/altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="@string/altura"
+        android:textColor="@color/morado_oscuro"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_fuego" />
+
+    <TextView
+        android:id="@+id/peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/peso"
+        android:textColor="@color/morado_oscuro"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altura" />
+
+    <Button
+        android:id="@+id/tipo_fuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/naranja"
+        android:text="@string/tipo_fuego"
+        app:layout_constraintEnd_toStartOf="@+id/tipo_fantasma"
+        app:layout_constraintStart_toEndOf="@+id/fondo"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon" />
+
+    <Button
+        android:id="@+id/tipo_fantasma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/morado_oscuro"
+        android:text="@string/tipo_fantasma"
+        app:layout_constraintEnd_toStartOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tipo_fuego"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon" />
+
+    <ImageView
+        android:id="@+id/pokeAnterior"
+        android:layout_width="88dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/charcadet"
+        app:layout_constraintBottom_toTopOf="@+id/evolucion_anterior"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/evolucion_anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/evolucion_anterior"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/pokeSiguiente"
+        android:layout_width="88dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/armarouge"
+        app:layout_constraintBottom_toTopOf="@+id/otra_evolucion"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/otra_evolucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/evolucion_siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <ImageButton
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/evolucion_anterior"
+        app:layout_constraintTop_toBottomOf="@+id/evolucion_anterior"
+        app:srcCompat="@drawable/ic_flecha" />
+
+    <ImageButton
+        android:id="@+id/siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/otra_evolucion"
+        app:layout_constraintTop_toBottomOf="@+id/otra_evolucion"
+        app:srcCompat="@drawable/ic_flecha_derecha" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/morado_oscuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_estrella" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
