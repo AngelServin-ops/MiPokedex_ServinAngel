@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MiPokedex_ServinAngel"
 include(":app")
- 
+include(":app:compose")
